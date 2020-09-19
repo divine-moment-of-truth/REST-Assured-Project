@@ -1,0 +1,24 @@
+package files;
+
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.*;
+import io.restassured.RestAssured;
+
+public class DynamicJson 
+{
+	@Test
+	public void addBook()
+	{
+		RestAssured.basePath = "http://216.10.245.166";
+		
+		given().header("Content-Type", "application/json")
+		.body(payLoad.AddBook())
+		.when()
+		.post("/Library/AddBook.php")
+		.then().log().all().assertThat().statusCode(200)
+		.extract().response().asString()
+		
+		
+	}
+}

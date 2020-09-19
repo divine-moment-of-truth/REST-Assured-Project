@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "358c14e9-2f61-4fc8-bd6c-d393b9d95020",
+		"name": "RSA_RESTAssured",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1_RSA_Maps",
+			"item": [
+				{
+					"name": "AddPlace",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"location\": {\r\n    \"lat\": -38.383494,\r\n    \"lng\": 33.427362\r\n  },\r\n  \"accuracy\": 50,\r\n  \"name\": \"Frontline house\",\r\n  \"phone_number\": \"(+91) 983 893 3937\",\r\n  \"address\": \"29, side layout, cohen 09\",\r\n  \"types\": [\r\n    \"shoe park\",\r\n    \"shop\"\r\n  ],\r\n  \"website\": \"http://google.com\",\r\n  \"language\": \"French-IN\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"add",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPlace",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f8344ed3069230cfad5f90a897004453",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"get",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								},
+								{
+									"key": "place_id",
+									"value": "f8344ed3069230cfad5f90a897004453"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePlace",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place_id\": \"17f23820ef39125a6553134dbe4d275c\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/delete/json",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"delete",
+								"json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePlace",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place_id\":\"f8344ed3069230cfad5f90a897004453\",\r\n    \"address\":\"70 winter walk, USA\",\r\n    \"key\":\"qaclick123\"\r\n}\r\n \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123&place_id=f8344ed3069230cfad5f90a897004453",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"update",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								},
+								{
+									"key": "place_id",
+									"value": "f8344ed3069230cfad5f90a897004453"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "2_RSA_Library",
+			"item": [
+				{
+					"name": "AddBook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Learn Appium Automation with Java\",\r\n    \"isbn\":\"bcd\",\r\n    \"aisle\":\"227\",\r\n    \"author\":\"John foe\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://216.10.245.166/Library/AddBook.php",
+							"protocol": "http",
+							"host": [
+								"216",
+								"10",
+								"245",
+								"166"
+							],
+							"path": [
+								"Library",
+								"AddBook.php"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBookByAuthor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBookById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBook",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "3_RSA_Jira",
+			"item": [
+				{
+					"name": "PostNewJiraSession",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"username\": \"Andy\",\r\n    \"password\": \"dudeegg1977\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest/auth/1/session",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest",
+								"auth",
+								"1",
+								"session"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateNewJiraIssue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"fields\": {\r\n        \"project\": \r\n        {\r\n            \"key\": \"QCA\"\r\n        },\r\n        \"summary\": \"something's wrong\",\r\n        \"description\": \"Creation of an issue using project keys\",\r\n        \"issueType\": {\r\n            \"name\": \"Bug\"\r\n        }        \r\n    }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/rest/api/2/issue?cookie=JSESSIONID=650170BD739D938A8C93D26827982C77",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest",
+								"api",
+								"2",
+								"issue"
+							],
+							"query": [
+								{
+									"key": "cookie",
+									"value": "JSESSIONID=650170BD739D938A8C93D26827982C77"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

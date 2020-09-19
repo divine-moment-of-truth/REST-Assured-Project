@@ -1,0 +1,15 @@
+package files;
+
+public class payLoad 
+{
+	public void AddBook()
+	{
+		String payload = "{\r\n" + 
+				"    \"name\":\"Learn Appium Automation with Java\",\r\n" + 
+				"    \"isbn\":\"bcd\",\r\n" + 
+				"    \"aisle\":\"227\",\r\n" + 
+				"    \"author\":\"John foe\"\r\n" + 
+				"}\r\n" + 
+				"";
+	}
+}

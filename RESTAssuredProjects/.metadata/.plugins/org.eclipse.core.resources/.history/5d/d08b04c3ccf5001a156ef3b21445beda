@@ -1,0 +1,18 @@
+import files.payload;
+import io.restassured.path.json.JsonPath;
+
+public class TWO_complexJSONParse 
+{
+	JsonPath js = new JsonPath(payload.CoursePricesComplexJson());
+	
+	// Total number of courses
+	int courseCount = js.getInt("courses.size()");
+	
+	// Get 'PurchaseAmount' from complex JSON object
+	int purchaseAmount = js.getInt("dashboard.purchaseAmount");
+	
+	// Print title of first course
+	String titleOfFirstCourse = js.getString("courses[0].title");
+	
+	
+}

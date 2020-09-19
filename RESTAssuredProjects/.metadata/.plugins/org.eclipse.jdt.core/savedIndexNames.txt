@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+C:\Users\Andy\Documents\software\Test Automation\RESTAssured\RESTAssuredProjects\.metadata\.plugins\org.eclipse.jdt.core
+77256213.index
+3683903666.index
+825097042.index
+9280655.index
+2165463458.index
+2227890072.index
+1132493784.index
+4076240125.index
+2231702328.index

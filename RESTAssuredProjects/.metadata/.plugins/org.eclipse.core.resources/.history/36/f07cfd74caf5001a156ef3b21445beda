@@ -1,0 +1,7 @@
+import io.restassured.path.json.JsonPath;
+
+public class TWO_complexJSONParse 
+{
+	JsonPath js = new JsonPath();
+	
+}
